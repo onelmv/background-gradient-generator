@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@500;900&display=swap" rel="stylesheet">
+
+    <title>BGD Generator</title>
+</head>
+<body class="start-background">
+    <div>
+        <h1 class="title">background gradient color generator</h1>
+    </div>
+
+    <hr>    
+
+    <!-- direction election -->
+    <div>
+        <h3>choose direction</h3>
+        <select required name="direction" id="direction-select">
+            <option value="top">&#x2191</option>
+            <option value="right top">&#x2197</option>
+            <option value="right">&#x2192</option>
+            <option value="right bottom">&#x2198</option>
+            <option value="bottom">&#x2193</option>
+            <option value="left bottom">&#x2199</option>
+            <option value="left">&#x2190</option>
+            <!-- <option value="circle">&#x21BB</option> //not support yet -->
+        </select>
+    </div>
+
+    <div class="columns">
+        <!-- color selection -->
+        <div class="inside-column">
+            <h3>choose colors</h3>
+            <div >
+                <div class="colorName">
+                    <label id="label1" for="color1">#8c24ef</label>
+                    <input class="buttonColor" id="color1" type="color" value="#8c24ef"></input >
+                </div>
+                <div class="colorName">
+    
+                    <label id="label2" for="color2">#a941b7</label>
+                    <input class="buttonColor" id="color2" type="color" value="#a941b7"></input >
+                </div>
+                <div class="colorName">
+                    <label id="label3" for="color3">#3d9750</label>
+                    <input class="buttonColor" id="color3" type="color" value="#3d9750"></input >
+                </div>
+            </div>
+    
+        </div>
+    
+        <!-- <hr"> -->
+        <div class="inside-column">
+            <div>
+    
+                <!--  random button -->
+                <div>
+                    <button id="random" class="random-bttn"> randomize !!!! </button>
+                </div>
+             
+                <!-- generator button -->
+                 <div >
+                     <button id="buttonGen" class="buttonGen">GENERate!</button>
+                 </div>
+              
+            </div>
+            <div >
+    
+                <!-- codigo generado en css format -->
+                <div > 
+                    <p id="code">
+                        <!-- empty by default -->
+                    </p>
+                    
+            
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
